@@ -1,0 +1,97 @@
+/* Import font */
+@font-face {
+    font-family: 'MomTypewriter';
+    src: url('./font/MomsTypewriter.woff2') format('woff2'),
+        url('./font/MomsTypewriter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+/* Custom properties */
+:root{
+    --light-color: #fff;
+    --light-color-alt: #afb6cd;
+    --primary-background-color: #000000;
+    --secondary-background-color: #252830;
+    --hover-light-color: var(--light-color);
+    --hover-dark-color: var(--primary-background-color);
+    --gradient-color: linear-gradient(
+        115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    --transparent-light-color: rgba(255,255,255,.05);
+    --transparent-dark-color: rgba(0,0,0,.75);
+    font-family: 'MomTypewriter';
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 4rem;
+    --gap: 2rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+    --item-min-height-sm: 20rem;
+    --item-min-height-md: 30rem;
+}
+/* Base styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 82.5%;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    color: var(--light-color-alt);
+    background-color: var(--primary-background-color);
+    letter-spacing: 1px;
+    transition: background-color .25s,color .25s;
+}
+
+/* Reusable classes */
+
+/* Header */
+.header{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar{
+    text-align: center;
+}
+
+/* Header JavaScript Styles */
+
+/* Search */
+
+/* Form JavaScript styles */
+
+/* Featured articles */
+
+/* Quick read */
+
+/* Quick read - Swiper */
+
+/* Older posts */
+
+
+/* Newsletter */
+
+/* Footer */
+
+/* Scrollbar styles */
+
+/* Blog post */
+
+/* Media queries */
