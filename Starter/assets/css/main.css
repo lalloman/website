@@ -56,16 +56,25 @@ body{
     transition: background-color .25s,color .25s;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+
 /* Reusable classes */
 
 /* Header */
 .header{
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    background-color: var(--secondary-background-color);
+
+} 
 
 .navbar{
     text-align: center;
