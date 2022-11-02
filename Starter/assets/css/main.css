@@ -26,9 +26,9 @@
     --transparent-dark-color: rgba(0,0,0,.75);
     font-family: 'MomTypewriter';
     --font-size-xsm: 1.2rem;
-    --font-size-sm: 1.6rem;
-    --font-size-md: 2.4rem;
-    --font-size-lg: 3rem;
+    --font-size-sm: 1.2rem;
+    --font-size-md: 1.8rem;
+    --font-size-lg: 2.4rem;
     --font-size-xl: 4rem;
     --gap: 2rem;
     --margin-sm: 2rem;
@@ -57,7 +57,7 @@ a {
     
   }
 
-body{
+body{   
     font-family: var(--font-family);
     font-size: var(--font-size-sm);
     color: var(--light-color-alt);
@@ -73,6 +73,7 @@ body{
     transform: translate(-50%, -50%);
     padding: 10px;
     text-align: center;
+    font-size:var(--font-size-lg)
   }
 
 .container {
@@ -85,6 +86,7 @@ body{
 
 /* Header */
 .header{
+    font-size: var(--font-size-lg);
     top: 0;
     left: 0;
     width: 100%;
@@ -110,6 +112,7 @@ body{
 .navbar{
     text-align: center;
     justify-content: space-between;
+    font-size: var(--font-size-md);
 
 }
 
@@ -167,7 +170,16 @@ body{
 
 .blog-post-title{
     font-size: clamp(3rem, 5vw, 6rem); 
+    text-align: center;
 }
+
+.circle {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background-color: var(--light-color-alt);
+    border-radius: 50%;
+  }
 
 .blog-post-data .article-data{
     margin-bottom: 2.5rem;
@@ -196,9 +208,9 @@ body{
 }
 
 .grid2 { 
-    display: grid;
-    position: absolute;
+    position: relative;
     top: 3.5rem;
+    display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 20px;
     align-items: stretch;
@@ -206,6 +218,7 @@ body{
   .grid2 img {
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     max-width: 100%;
+    max-height: 75%;
   }
 
 /* Media queries */
