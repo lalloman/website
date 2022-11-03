@@ -177,8 +177,9 @@ body{
     position: relative;
     height: 250px;
     width: 250px;
-    background-color: var(--light-color-alt);
+    background-color: var(--primary-background-color);
     border-radius: 50%;
+    border:15px solid #afb6cd; 
   }
 
 .blog-post-data .article-data{
