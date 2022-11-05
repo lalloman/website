@@ -8,6 +8,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Special Elite';
+    src: url('./font/SpecialElite-Regular.woff2') format('woff2'),
+        url('./font/SpecialElite-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 
@@ -80,6 +89,8 @@ body{
     max-width: 200rem;
     margin: 0 auto;
     padding: 0 1.5rem;
+    font-family: "Special Elite";
+    font-size: var(--font-size-md);
 }
 /* Reusable classes */
 
@@ -112,7 +123,7 @@ body{
 .navbar{
     text-align: center;
     justify-content: space-between;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-lg);
 
 }
 
@@ -175,8 +186,8 @@ body{
 
 .circle {
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 20vw;
+    width: 20vw;
     background-color: var(--primary-background-color);
     border-radius: 50%;
     border:15px solid #afb6cd; 
@@ -184,6 +195,10 @@ body{
 
 .blog-post-data .article-data{
     margin-bottom: 2.5rem;
+}
+
+.blog-post-score{
+    display: inline-block
 }
 
 .blog-post-data img{
@@ -210,7 +225,8 @@ body{
 
 .grid2 { 
     position: relative;
-    top: 3.5rem;
+    left: 15rem;
+    top: 4.5rem;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 20px;
