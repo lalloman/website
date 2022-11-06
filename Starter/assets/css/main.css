@@ -38,7 +38,7 @@
     --font-size-sm: 1.2rem;
     --font-size-md: 1.8rem;
     --font-size-lg: 2.4rem;
-    --font-size-xl: 4rem;
+    --font-size-xl: 8rem;
     --gap: 2rem;
     --margin-sm: 2rem;
     --margin-md: 3rem;
@@ -186,11 +186,16 @@ body{
 
 .circle {
     position: relative;
-    height: 20vw;
-    width: 20vw;
+    height: 250px;
+    width: 250px;
     background-color: var(--primary-background-color);
     border-radius: 50%;
     border:15px solid #afb6cd; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
   }
 
 .blog-post-data .article-data{
@@ -198,7 +203,8 @@ body{
 }
 
 .blog-post-score{
-    display: inline-block
+    font-family: "Special Elite";
+    font-size: var(--font-size-xl);
 }
 
 .blog-post-data img{
@@ -226,7 +232,7 @@ body{
 .grid2 { 
     position: relative;
     left: 15rem;
-    top: 4.5rem;
+    top: 5.5rem;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 20px;
