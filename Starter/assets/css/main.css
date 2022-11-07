@@ -86,8 +86,8 @@ body{
   }
 
 .container {
-    max-width: 200rem;
-    margin: 0 auto;
+    max-width: 500rem;
+    margin: 15px;
     padding: 0 1.5rem;
     font-family: "Special Elite";
     font-size: var(--font-size-md);
@@ -185,6 +185,7 @@ body{
 }
 
 .circle {
+    top: 3.5rem;
     position: relative;
     height: 250px;
     width: 250px;
@@ -217,8 +218,8 @@ body{
 .blog-post-container .container{
     max-width: 200rem;
     padding: 0;
-    display: flex;
     gap: var(--gap);
+    
 }
 
 .form-container-inner{
